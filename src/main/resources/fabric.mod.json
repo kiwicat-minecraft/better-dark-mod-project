@@ -1,17 +1,17 @@
 {
 	"schemaVersion": 1,
 	"id": "better-dark-mod",
-	"version": "${version}",
+	"version": "${0.1}",
 	"name": "Better dark mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "VOID",
 	"authors": [
-		"Me!"
+		"Amy!"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/kiwicat-minecraft/better-dark-mod-template-1.21.1"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/better-dark-mod/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"net.kiwi.darkmod.BetterDarkModDataGenerator"
+		],
+		"client": [
+			"net.kiwi.darkmod.DarkModClient"
 		]
 	},
 	"mixins": [
