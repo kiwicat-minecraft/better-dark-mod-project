@@ -1,4 +1,10 @@
 {
   "item.better-dark-mod.void_ore": "Void Diamond",
-  "item.better-dark-mod.void_goo": "Void Goo"
+  "item.better-dark-mod.void_goo": "Void Goo",
+
+  "block.better-dark-mod.true_void_block": "Void",
+  "block.better-dark-mod.void_diamond_block": "Block of Void Diamond",
+
+  "itemgroup.better-dark-mod.void_items": "Void Items",
+  "itemgroup.better-dark-mod.void_blocks": "Void Blocks"
 }
