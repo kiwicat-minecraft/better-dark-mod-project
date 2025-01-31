@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kiwi.darkmod.BetterDarkMod;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -11,6 +12,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
@@ -25,6 +27,34 @@ public class ModBlocks {
                     .strength(4f)
                     .sounds(BlockSoundGroup.AMETHYST_BLOCK)
                     .requiresTool()));
+
+    public static final Block VOID_DIAMOND_ORE_BLOCK = registerBlock("void_diamond_ore_block",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create()
+                            .strength(3f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.NETHERITE)));
+
+    public static final Block VOID_GOO_BLOCK = registerBlock("void_goo_block",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create()
+                            .strength(2f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.MUD)));
+
+    public static final Block VOID_DIAMOND_ORE_DEEPSLATE_BLOCK = registerBlock("void_diamond_ore_deepslate_block",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create()
+                            .strength(3f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.NETHERITE)));
+
+    public static final Block VOID_GOO_DEEPSLATE_BLOCK = registerBlock("void_goo_deepslate_block",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create()
+                            .strength(2f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.MUD)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
@@ -42,6 +72,11 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.TRUE_VOID_BLOCK);
             fabricItemGroupEntries.add(ModBlocks.VOID_DIAMOND_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.VOID_GOO_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.VOID_GOO_DEEPSLATE_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.VOID_DIAMOND_ORE_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.VOID_DIAMOND_ORE_DEEPSLATE_BLOCK);
+
         });
     }
 }

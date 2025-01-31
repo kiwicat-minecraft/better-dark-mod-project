@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "better-dark-mod:void_diamond_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "better-dark-mod:void_ore"
+  }
+}

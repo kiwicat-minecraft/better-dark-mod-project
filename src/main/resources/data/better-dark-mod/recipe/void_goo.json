@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "better-dark-mod:true_void_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "better-dark-mod:void_goo"
+  }
+}

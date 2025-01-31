@@ -27,6 +27,11 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.VOID_DIAMOND_BLOCK);
                         entries.add(ModBlocks.TRUE_VOID_BLOCK);
+                        entries.add(ModBlocks.VOID_GOO_BLOCK);
+                        entries.add(ModBlocks.VOID_GOO_DEEPSLATE_BLOCK);
+                        entries.add(ModBlocks.VOID_DIAMOND_ORE_BLOCK);
+                        entries.add(ModBlocks.VOID_DIAMOND_ORE_DEEPSLATE_BLOCK);
+
                     }).build());
 
     public static void registerItemGroups(){
