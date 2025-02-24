@@ -18,6 +18,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.VOID_GOO);
                         entries.add(ModItems.VOID_ORE);
+
+                        entries.add(ModItems.VOID_STAFF);
                     }).build());
 
     public static final ItemGroup VOID_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
