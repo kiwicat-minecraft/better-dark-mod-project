@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "better-dark-mod:void_diamond_block",
+    "better-dark-mod:void_diamond_ore_block",
+    "better-dark-mod:void_goo_block",
+    "better-dark-mod:void_diamond_ore_deepslate_block",
+    "better-dark-mod:void_goo_deepslate_block",
+    "better-dark-mod:true_void_block"
+  ]
+}
