@@ -33,6 +33,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.VOID_GOO_DEEPSLATE_BLOCK);
                         entries.add(ModBlocks.VOID_DIAMOND_ORE_BLOCK);
                         entries.add(ModBlocks.VOID_DIAMOND_ORE_DEEPSLATE_BLOCK);
+                        entries.add(ModBlocks.VOID_ALTAR);
 
                     }).build());
 

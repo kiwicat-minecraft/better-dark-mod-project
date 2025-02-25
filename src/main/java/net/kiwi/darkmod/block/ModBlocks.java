@@ -1,7 +1,9 @@
 package net.kiwi.darkmod.block;
 
+import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kiwi.darkmod.BetterDarkMod;
+import net.kiwi.darkmod.block.custom.VoidAltar;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.ExperienceDroppingBlock;
@@ -55,6 +57,9 @@ public class ModBlocks {
                             .strength(2f)
                             .requiresTool()
                             .sounds(BlockSoundGroup.MUD)));
+
+    public static final Block VOID_ALTAR =registerBlock("void_altar",
+            new VoidAltar(AbstractBlock.Settings.create().requiresTool().strength(3f)));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

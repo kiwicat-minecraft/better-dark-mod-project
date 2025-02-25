@@ -12,6 +12,8 @@
   "block.better-dark-mod.void_goo_deepslate_block": "Deepslate Void Goo Ore",
   "block.better-dark-mod.true_void_block": "Void",
 
+  "block.better-dark-mod.void_altar": "Void Altar",
+
   "itemgroup.better-dark-mod.void_items": "Void Items",
   "itemgroup.better-dark-mod.void_blocks": "Void Blocks"
 }
