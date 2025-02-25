@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item VOID_ORE = registerItem("void_ore", new Item(new Item.Settings()));
     public static final Item VOID_GOO = registerItem("void_goo", new Item(new Item.Settings()));
+    public static final Item VOID_BERRY = registerItem("void_berry", new Item(new Item.Settings().food(ModFoodComponents.VOID_BERRY)));
 
     public static final Item VOID_STAFF = registerItem("void_staff", new VoidStaffItem(new Item.Settings().maxDamage(32)));
 
