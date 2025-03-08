@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "better-dark-mod:block/void_diamond_ore_block"
-  }
-}
