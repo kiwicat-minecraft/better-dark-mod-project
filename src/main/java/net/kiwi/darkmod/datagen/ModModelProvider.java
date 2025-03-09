@@ -3,10 +3,10 @@ package net.kiwi.darkmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.kiwi.darkmod.block.ModBlocks;
+import net.kiwi.darkmod.block.custom.VoidLampBlock;
 import net.kiwi.darkmod.item.ModItems;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.data.client.*;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -22,6 +22,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VOID_DIAMOND_ORE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VOID_DIAMOND_ORE_DEEPSLATE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VOID_ALTAR);
+
         BlockStateModelGenerator.BlockTexturePool voidbrickpool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VOID_BRICK_BLOCK);
 
         voidbrickpool.stairs(ModBlocks.VOID_BRICK_STAIRS);
@@ -34,6 +35,11 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.VOID_BRICK_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.VOID_BRICK_TRAPDOOR);
+
+        Identifier lampOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.VOID_LAMP, blockStateModelGenerator.modelCollector);
+        Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.VOID_LAMP, "_on", Models.CUBE_ALL, TextureMap::all);
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.VOID_LAMP)
+                .coordinate(BlockStateModelGenerator.createBooleanModelMap(VoidLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
 
     }
 

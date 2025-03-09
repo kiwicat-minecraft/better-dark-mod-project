@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kiwi.darkmod.BetterDarkMod;
 import net.kiwi.darkmod.block.custom.VoidAltar;
+import net.kiwi.darkmod.block.custom.VoidLampBlock;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -106,6 +107,12 @@ public class ModBlocks {
     public static final Block VOID_BRICK_TRAPDOOR = registerBlock("void_brick_trapdoor",
             new TrapdoorBlock(BlockSetType.IRON,
                     AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
+
+    public static final Block VOID_LAMP = registerBlock("void_lamp",
+            new VoidLampBlock(AbstractBlock.Settings.create()
+                    .strength(1f)
+                    .requiresTool()
+                    .luminance(state -> state.get(VoidLampBlock.CLICKED) ? 15 : 0)));
 
 
 

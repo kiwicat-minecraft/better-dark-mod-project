@@ -26,6 +26,8 @@
   "block.better-dark-mod.void_brick_wall": "Void Brick Wall",
   "block.better-dark-mod.void_brick_pressure_plate": "Void Brick Pressure Plate",
 
+  "block.better-dark-mod.void_lamp": "Void Lamp",
+
   "itemgroup.better-dark-mod.void_items": "Void Items",
   "itemgroup.better-dark-mod.void_blocks": "Void Blocks",
 
@@ -37,5 +39,7 @@
   "tooltip.better-dark-mod.true_void_block": "§9 $%$%/%%%&%&/%&//&/&/&/&/%&&/%&/&/&/&%%&&/§§%$/&(%%$ §r",
 
   "tooltip.better-dark-mod.void_berry": "A Berry Straight from the §8Void§r"
+
+
 
 }
