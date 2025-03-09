@@ -3,6 +3,8 @@
   "item.better-dark-mod.void_goo": "Void Goo",
   "item.better-dark-mod.void_staff": "Void Staff",
   "item.better-dark-mod.void_berry": "Void Berry",
+  "item.better-dark-mod.void_brick": "Void Brick",
+  "item.better-dark-mod.void_clay": "Void Clay",
 
   "block.better-dark-mod.void_diamond_block": "Block of Void Diamond",
   "block.better-dark-mod.void_diamond_ore_block": "Void Diamond Ore",
@@ -13,6 +15,16 @@
   "block.better-dark-mod.true_void_block": "Void",
 
   "block.better-dark-mod.void_altar": "Void Altar",
+
+  "block.better-dark-mod.void_brick_stairs": "Void Brick Stairs",
+  "block.better-dark-mod.void_brick_button": "Void Brick Button",
+  "block.better-dark-mod.void_brick_door": "Void Brick Door",
+  "block.better-dark-mod.void_brick_fence": "Void Brick Fence",
+  "block.better-dark-mod.void_brick_slab": "Void Brick Slab",
+  "block.better-dark-mod.void_brick_fence_gate": "Void Brick Fence Gate",
+  "block.better-dark-mod.void_brick_trapdoor": "Void Brick Trapdoor",
+  "block.better-dark-mod.void_brick_wall": "Void Brick Wall",
+  "block.better-dark-mod.void_brick_pressure_plate": "Void Brick Pressure Plate",
 
   "itemgroup.better-dark-mod.void_items": "Void Items",
   "itemgroup.better-dark-mod.void_blocks": "Void Blocks",
@@ -25,4 +37,5 @@
   "tooltip.better-dark-mod.true_void_block": "§9 $%$%/%%%&%&/%&//&/&/&/&/%&&/%&/&/&/&%%&&/§§%$/&(%%$ §r",
 
   "tooltip.better-dark-mod.void_berry": "A Berry Straight from the §8Void§r"
+
 }

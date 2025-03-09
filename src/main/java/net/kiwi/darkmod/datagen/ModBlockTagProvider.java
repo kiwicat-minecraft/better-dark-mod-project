@@ -31,5 +31,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.VOID_GOO_DEEPSLATE_BLOCK)
                 .add(ModBlocks.VOID_DIAMOND_ORE_BLOCK)
                 .add(ModBlocks.VOID_DIAMOND_ORE_DEEPSLATE_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.VOID_BRICK_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.VOID_BRICK_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.VOID_BRICK_WALL);
     }
 }

@@ -4,9 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kiwi.darkmod.BetterDarkMod;
 import net.kiwi.darkmod.block.custom.VoidAltar;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -68,9 +66,55 @@ public class ModBlocks {
                             .strength(2f)
                             .requiresTool()
                             .sounds(BlockSoundGroup.MUD)));
+    public static final Block VOID_BRICK_BLOCK = registerBlock("void_brick_block",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(3f)));
 
     public static final Block VOID_ALTAR =registerBlock("void_altar",
             new VoidAltar(AbstractBlock.Settings.create().requiresTool().strength(3f)));
+
+    public static final Block VOID_BRICK_STAIRS = registerBlock("void_brick_stairs",
+            new StairsBlock(ModBlocks.VOID_BRICK_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+    public static final Block VOID_BRICK_SLAB = registerBlock("void_brick_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+    public static final Block VOID_BRICK_BUTTON = registerBlock("void_brick_button",
+            new ButtonBlock(BlockSetType.IRON,2,
+                    AbstractBlock.Settings.create().strength(2f).requiresTool().noCollision()));
+
+    public static final Block VOID_BRICK_PRESSURE_PLATE = registerBlock("void_brick_pressure_plate",
+            new PressurePlateBlock(BlockSetType.IRON,
+                    AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+    public static final Block VOID_BRICK_FENCE = registerBlock("void_brick_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+    public static final Block VOID_BRICK_FENCE_GATE = registerBlock("void_brick_fence_gate",
+            new FenceGateBlock(WoodType.BIRCH,
+                    AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+    public static final Block VOID_BRICK_WALL = registerBlock("void_brick_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+    public static final Block VOID_BRICK_DOOR = registerBlock("void_brick_door",
+            new DoorBlock(BlockSetType.IRON,
+                    AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
+
+    public static final Block VOID_BRICK_TRAPDOOR = registerBlock("void_brick_trapdoor",
+            new TrapdoorBlock(BlockSetType.IRON,
+                    AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
+
+
+
+
+
+
+
+
+
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);

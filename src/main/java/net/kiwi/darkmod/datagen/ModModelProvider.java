@@ -22,6 +22,18 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VOID_DIAMOND_ORE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VOID_DIAMOND_ORE_DEEPSLATE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VOID_ALTAR);
+        BlockStateModelGenerator.BlockTexturePool voidbrickpool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VOID_BRICK_BLOCK);
+
+        voidbrickpool.stairs(ModBlocks.VOID_BRICK_STAIRS);
+        voidbrickpool.button(ModBlocks.VOID_BRICK_BUTTON);
+        voidbrickpool.fence(ModBlocks.VOID_BRICK_FENCE);
+        voidbrickpool.fenceGate(ModBlocks.VOID_BRICK_FENCE_GATE);
+        voidbrickpool.slab(ModBlocks.VOID_BRICK_SLAB);
+        voidbrickpool.wall(ModBlocks.VOID_BRICK_WALL);
+        voidbrickpool.pressurePlate(ModBlocks.VOID_BRICK_PRESSURE_PLATE);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.VOID_BRICK_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.VOID_BRICK_TRAPDOOR);
 
     }
 
@@ -31,6 +43,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.VOID_GOO, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_BERRY, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_STAFF, Models.GENERATED);
-
+        itemModelGenerator.register(ModItems.VOID_BRICK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VOID_CLAY, Models.GENERATED);
     }
 }

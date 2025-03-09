@@ -19,6 +19,8 @@ public class ModItemGroups {
                         entries.add(ModItems.VOID_GOO);
                         entries.add(ModItems.VOID_ORE);
                         entries.add(ModItems.VOID_BERRY);
+                        entries.add(ModItems.VOID_BRICK);
+                        entries.add(ModItems.VOID_CLAY);
 
                         entries.add(ModItems.VOID_STAFF);
                     }).build());
@@ -35,6 +37,17 @@ public class ModItemGroups {
                         entries.add(ModBlocks.VOID_DIAMOND_ORE_BLOCK);
                         entries.add(ModBlocks.VOID_DIAMOND_ORE_DEEPSLATE_BLOCK);
                         entries.add(ModBlocks.VOID_ALTAR);
+                        entries.add(ModBlocks.VOID_BRICK_BLOCK);
+
+                        entries.add(ModBlocks.VOID_BRICK_STAIRS);
+                        entries.add(ModBlocks.VOID_BRICK_BUTTON);
+                        entries.add(ModBlocks.VOID_BRICK_DOOR);
+                        entries.add(ModBlocks.VOID_BRICK_FENCE);
+                        entries.add(ModBlocks.VOID_BRICK_SLAB);
+                        entries.add(ModBlocks.VOID_BRICK_FENCE_GATE);
+                        entries.add(ModBlocks.VOID_BRICK_TRAPDOOR);
+                        entries.add(ModBlocks.VOID_BRICK_WALL);
+                        entries.add(ModBlocks.VOID_BRICK_PRESSURE_PLATE);
 
                     }).build());
 

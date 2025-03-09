@@ -17,6 +17,8 @@ import java.util.List;
 public class ModItems {
     public static final Item VOID_ORE = registerItem("void_ore", new Item(new Item.Settings()));
     public static final Item VOID_GOO = registerItem("void_goo", new Item(new Item.Settings()));
+    public static final Item VOID_BRICK = registerItem("void_brick", new Item(new Item.Settings()));
+    public static final Item VOID_CLAY = registerItem("void_clay", new Item(new Item.Settings()));
     public static final Item VOID_BERRY = registerItem("void_berry", new Item(new Item.Settings().food(ModFoodComponents.VOID_BERRY)){
         @Override
         public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
@@ -37,6 +39,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(VOID_ORE);
             fabricItemGroupEntries.add(VOID_GOO);
+            fabricItemGroupEntries.add(VOID_BRICK);
         });
     }
 }
