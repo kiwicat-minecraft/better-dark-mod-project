@@ -22,9 +22,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VOID_DIAMOND_ORE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VOID_DIAMOND_ORE_DEEPSLATE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VOID_ALTAR);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEST_BLOCK);
+
 
         BlockStateModelGenerator.BlockTexturePool voidbrickpool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VOID_BRICK_BLOCK);
+        BlockStateModelGenerator.BlockTexturePool testpool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TEST_BLOCK);
 
         voidbrickpool.stairs(ModBlocks.VOID_BRICK_STAIRS);
         voidbrickpool.button(ModBlocks.VOID_BRICK_BUTTON);
@@ -36,6 +37,17 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerDoor(ModBlocks.VOID_BRICK_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.VOID_BRICK_TRAPDOOR);
+
+        testpool.stairs(ModBlocks.TEST_STAIRS);
+        testpool.button(ModBlocks.TEST_BUTTON);
+        testpool.fence(ModBlocks.TEST_FENCE);
+        testpool.fenceGate(ModBlocks.TEST_FENCE_GATE);
+        testpool.slab(ModBlocks.TEST_SLAB);
+        testpool.wall(ModBlocks.TEST_WALL);
+        testpool.pressurePlate(ModBlocks.TEST_PRESSURE_PLATE);
+
+        blockStateModelGenerator.registerDoor(ModBlocks.TEST_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.TEST_TRAPDOOR);
 
         Identifier lampOffIdentifier = TexturedModel.CUBE_ALL.upload(ModBlocks.VOID_LAMP, blockStateModelGenerator.modelCollector);
         Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.VOID_LAMP, "_on", Models.CUBE_ALL, TextureMap::all);

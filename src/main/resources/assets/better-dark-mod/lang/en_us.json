@@ -18,6 +18,16 @@
 
   "block.better-dark-mod.test_block": "Test Block",
 
+  "block.better-dark-mod.test_stairs": "Test Stairs",
+  "block.better-dark-mod.test_button": "Test Button",
+  "block.better-dark-mod.test_door": "Test Door",
+  "block.better-dark-mod.test_fence": "Test Fence",
+  "block.better-dark-mod.test_slab": "Test Slab",
+  "block.better-dark-mod.test_fence_gate": "Test Fence Gate",
+  "block.better-dark-mod.test_trapdoor": "Test Trapdoor",
+  "block.better-dark-mod.test_wall": "Test Wall",
+  "block.better-dark-mod.test_pressure_plate": "Test Pressure Plate",
+
   "block.better-dark-mod.void_brick_stairs": "Void Brick Stairs",
   "block.better-dark-mod.void_brick_button": "Void Brick Button",
   "block.better-dark-mod.void_brick_door": "Void Brick Door",

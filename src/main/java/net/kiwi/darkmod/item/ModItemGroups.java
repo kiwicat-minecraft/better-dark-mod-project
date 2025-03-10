@@ -51,6 +51,16 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.TEST_BLOCK);
 
+                        entries.add(ModBlocks.TEST_STAIRS);
+                        entries.add(ModBlocks.TEST_BUTTON);
+                        entries.add(ModBlocks.TEST_DOOR);
+                        entries.add(ModBlocks.TEST_FENCE);
+                        entries.add(ModBlocks.TEST_SLAB);
+                        entries.add(ModBlocks.TEST_FENCE_GATE);
+                        entries.add(ModBlocks.TEST_TRAPDOOR);
+                        entries.add(ModBlocks.TEST_WALL);
+                        entries.add(ModBlocks.TEST_PRESSURE_PLATE);
+
                         entries.add(ModBlocks.VOID_LAMP);
 
                     }).build());

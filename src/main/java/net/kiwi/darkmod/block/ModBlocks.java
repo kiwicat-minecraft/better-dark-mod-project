@@ -119,6 +119,39 @@ public class ModBlocks {
                     .strength(1f)
                     .requiresTool()));
 
+    public static final Block TEST_STAIRS = registerBlock("test_stairs",
+            new StairsBlock(ModBlocks.TEST_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+    public static final Block TEST_SLAB = registerBlock("test_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+    public static final Block TEST_BUTTON = registerBlock("test_button",
+            new ButtonBlock(BlockSetType.IRON,2,
+                    AbstractBlock.Settings.create().strength(2f).requiresTool().noCollision()));
+
+    public static final Block TEST_PRESSURE_PLATE = registerBlock("test_pressure_plate",
+            new PressurePlateBlock(BlockSetType.IRON,
+                    AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+    public static final Block TEST_FENCE = registerBlock("test_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+    public static final Block TEST_FENCE_GATE = registerBlock("test_fence_gate",
+            new FenceGateBlock(WoodType.BIRCH,
+                    AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+    public static final Block TEST_WALL = registerBlock("test_wall",
+            new WallBlock(AbstractBlock.Settings.create().strength(2f).requiresTool()));
+
+    public static final Block TEST_DOOR = registerBlock("test_door",
+            new DoorBlock(BlockSetType.IRON,
+                    AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
+
+    public static final Block TEST_TRAPDOOR = registerBlock("test_trapdoor",
+            new TrapdoorBlock(BlockSetType.IRON,
+                    AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
+
 
 
 
