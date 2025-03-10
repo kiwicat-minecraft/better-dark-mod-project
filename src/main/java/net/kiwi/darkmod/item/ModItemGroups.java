@@ -49,6 +49,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.VOID_BRICK_WALL);
                         entries.add(ModBlocks.VOID_BRICK_PRESSURE_PLATE);
 
+                        entries.add(ModBlocks.TEST_BLOCK);
+
                         entries.add(ModBlocks.VOID_LAMP);
 
                     }).build());

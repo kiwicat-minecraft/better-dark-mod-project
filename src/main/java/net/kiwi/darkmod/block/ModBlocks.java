@@ -114,6 +114,11 @@ public class ModBlocks {
                     .requiresTool()
                     .luminance(state -> state.get(VoidLampBlock.CLICKED) ? 15 : 0)));
 
+    public static final Block TEST_BLOCK = registerBlock("test_block",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(1f)
+                    .requiresTool()));
+
 
 
 

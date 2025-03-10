@@ -22,6 +22,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VOID_DIAMOND_ORE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VOID_DIAMOND_ORE_DEEPSLATE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.VOID_ALTAR);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEST_BLOCK);
 
         BlockStateModelGenerator.BlockTexturePool voidbrickpool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.VOID_BRICK_BLOCK);
 
