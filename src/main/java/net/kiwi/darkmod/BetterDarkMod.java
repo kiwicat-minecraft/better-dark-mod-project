@@ -4,6 +4,7 @@ package net.kiwi.darkmod;
 import net.fabricmc.api.ModInitializer;
 
 import net.kiwi.darkmod.block.ModBlocks;
+import net.kiwi.darkmod.component.ModDataComponentTypes;
 import net.kiwi.darkmod.item.ModItemGroups;
 import net.kiwi.darkmod.item.ModItems;
 import org.slf4j.Logger;
@@ -20,6 +21,7 @@ public class BetterDarkMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
+		ModDataComponentTypes.registerDataComponentTypes();
 
 
 

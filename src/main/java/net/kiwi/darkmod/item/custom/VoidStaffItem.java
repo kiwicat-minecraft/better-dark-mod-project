@@ -1,6 +1,7 @@
 package net.kiwi.darkmod.item.custom;
 
 import net.kiwi.darkmod.block.ModBlocks;
+import net.kiwi.darkmod.component.ModDataComponentTypes;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -50,6 +51,8 @@ public class VoidStaffItem extends Item {
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
                 world.playSound(null, context.getBlockPos(), SoundEvents.ENTITY_WARDEN_HEARTBEAT, SoundCategory.BLOCKS);
+
+                context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             }
             
         }
@@ -63,6 +66,10 @@ public class VoidStaffItem extends Item {
             tooltip.add(Text.translatable("tooltip.better-dark-mod.void_staff.shift_down"));
         } else {
             tooltip.add(Text.translatable("tooltip.better-dark-mod.void_staff"));
+        }
+
+        if (stack.get(ModDataComponentTypes.COORDINATES) != null) {
+            tooltip.add(Text.literal("Last Block Changed at " + stack.get(ModDataComponentTypes.COORDINATES)));
         }
 
         super.appendTooltip(stack, context, tooltip, type);
