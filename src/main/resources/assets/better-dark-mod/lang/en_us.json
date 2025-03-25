@@ -6,6 +6,13 @@
   "item.better-dark-mod.void_brick": "Void Brick",
   "item.better-dark-mod.void_clay": "Void Clay",
 
+  "item.better-dark-mod.void_diamond_sword": "Void Sword",
+  "item.better-dark-mod.void_diamond_shovel": "Void Shovel",
+  "item.better-dark-mod.void_diamond_axe": "Void Axe",
+  "item.better-dark-mod.void_diamond_hoe": "Void Hoe",
+  "item.better-dark-mod.void_diamond_pickaxe": "Void Pickaxe",
+
+
   "block.better-dark-mod.void_diamond_block": "Block of Void Diamond",
   "block.better-dark-mod.void_diamond_ore_block": "Void Diamond Ore",
   "block.better-dark-mod.void_diamond_ore_deepslate_block": "Deepslate Void Diamond Ore",

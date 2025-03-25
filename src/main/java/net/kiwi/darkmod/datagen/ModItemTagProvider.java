@@ -6,6 +6,7 @@ import net.kiwi.darkmod.item.ModItems;
 import net.kiwi.darkmod.util.ModTags;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -21,5 +22,16 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(Items.DIAMOND)
                 .add(Items.COAL)
                 .add(Items.ENDERMAN_SPAWN_EGG);
+
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(ModItems.VOID_DIAMOND_SWORD);
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ModItems.VOID_DIAMOND_SHOVEL);
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.VOID_DIAMOND_AXE);
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ModItems.VOID_DIAMOND_HOE);
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ModItems.VOID_DIAMOND_PICKAXE);
     }
 }

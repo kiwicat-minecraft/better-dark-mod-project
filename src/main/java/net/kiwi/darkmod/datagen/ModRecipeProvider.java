@@ -55,6 +55,52 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('D', ModItems.VOID_ORE)
                 .criterion(hasItem(ModItems.VOID_GOO), conditionsFromItem(ModItems.VOID_GOO))
                 .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.VOID_DIAMOND_SWORD)
+                .pattern(" D ")
+                .pattern(" D ")
+                .pattern(" S ")
+                .input('S', Items.STICK)
+                .input('D', ModItems.VOID_ORE)
+                .criterion(hasItem(ModItems.VOID_ORE), conditionsFromItem(ModItems.VOID_ORE))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.VOID_DIAMOND_AXE)
+                .pattern(" DD")
+                .pattern(" SD")
+                .pattern(" S ")
+                .input('S', Items.STICK)
+                .input('D', ModItems.VOID_ORE)
+                .criterion(hasItem(ModItems.VOID_ORE), conditionsFromItem(ModItems.VOID_ORE))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.VOID_DIAMOND_PICKAXE)
+                .pattern("DDD")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('S', Items.STICK)
+                .input('D', ModItems.VOID_ORE)
+                .criterion(hasItem(ModItems.VOID_ORE), conditionsFromItem(ModItems.VOID_ORE))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.VOID_DIAMOND_SHOVEL)
+                .pattern(" D ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('S', Items.STICK)
+                .input('D', ModItems.VOID_ORE)
+                .criterion(hasItem(ModItems.VOID_ORE), conditionsFromItem(ModItems.VOID_ORE))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.VOID_DIAMOND_HOE)
+                .pattern(" DD")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('S', Items.STICK)
+                .input('D', ModItems.VOID_ORE)
+                .criterion(hasItem(ModItems.VOID_ORE), conditionsFromItem(ModItems.VOID_ORE))
+                .offerTo(recipeExporter);
+
         offer2x2CompactingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.VOID_BRICK_BLOCK, ModItems.VOID_BRICK);
 
 

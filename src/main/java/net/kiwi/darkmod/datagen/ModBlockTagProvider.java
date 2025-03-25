@@ -3,6 +3,7 @@ package net.kiwi.darkmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.kiwi.darkmod.block.ModBlocks;
+import net.kiwi.darkmod.util.ModTags;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
 
@@ -44,6 +45,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.VOID_BRICK_WALL)
                 .add(ModBlocks.TEST_WALL);
+
+
 
     }
 }

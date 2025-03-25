@@ -23,6 +23,12 @@ public class ModItemGroups {
                         entries.add(ModItems.VOID_CLAY);
 
                         entries.add(ModItems.VOID_STAFF);
+
+                        entries.add(ModItems.VOID_DIAMOND_SWORD);
+                        entries.add(ModItems.VOID_DIAMOND_SHOVEL);
+                        entries.add(ModItems.VOID_DIAMOND_AXE);
+                        entries.add(ModItems.VOID_DIAMOND_HOE);
+                        entries.add(ModItems.VOID_DIAMOND_PICKAXE);
                     }).build());
 
     public static final ItemGroup VOID_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

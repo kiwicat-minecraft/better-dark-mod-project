@@ -10,6 +10,9 @@ import net.minecraft.util.Identifier;
 
 public class ModTags {
     public static class Blocks {
+        public static final TagKey<Block> NEEDS_VOID_TOOL = createTag("needs_void_tool");
+        public static final TagKey<Block> INCORRECT_FOR_VOID_TOOL = createTag("incorrect_for_void_tool");
+
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(BetterDarkMod.MOD_ID, name));
         }
