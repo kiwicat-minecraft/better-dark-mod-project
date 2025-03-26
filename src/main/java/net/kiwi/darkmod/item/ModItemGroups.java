@@ -29,6 +29,7 @@ public class ModItemGroups {
                         entries.add(ModItems.VOID_DIAMOND_AXE);
                         entries.add(ModItems.VOID_DIAMOND_HOE);
                         entries.add(ModItems.VOID_DIAMOND_PICKAXE);
+                        entries.add(ModItems.VOID_DIAMOND_HAMMER);
                     }).build());
 
     public static final ItemGroup VOID_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -55,6 +56,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.VOID_BRICK_WALL);
                         entries.add(ModBlocks.VOID_BRICK_PRESSURE_PLATE);
 
+
+                        entries.add(ModBlocks.VOID_LAMP);
+
+                    }).build());
+
+    public static final ItemGroup VOID_TEST_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(BetterDarkMod.MOD_ID, "void_test"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.TEST_BLOCK))
+                    .displayName(Text.translatable("itemgroup.better-dark-mod.void_test"))
+                    .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.TEST_BLOCK);
 
                         entries.add(ModBlocks.TEST_STAIRS);
@@ -67,7 +78,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.TEST_WALL);
                         entries.add(ModBlocks.TEST_PRESSURE_PLATE);
 
-                        entries.add(ModBlocks.VOID_LAMP);
 
                     }).build());
 

@@ -11,6 +11,7 @@
   "item.better-dark-mod.void_diamond_axe": "Void Axe",
   "item.better-dark-mod.void_diamond_hoe": "Void Hoe",
   "item.better-dark-mod.void_diamond_pickaxe": "Void Pickaxe",
+  "item.better-dark-mod.void_diamond_hammer": "Void Hammer",
 
 
   "block.better-dark-mod.void_diamond_block": "Block of Void Diamond",
@@ -20,6 +21,8 @@
   "block.better-dark-mod.void_goo_block": "Void Goo Ore",
   "block.better-dark-mod.void_goo_deepslate_block": "Deepslate Void Goo Ore",
   "block.better-dark-mod.true_void_block": "Void",
+
+  "block.better-dark-mod.void_brick_block": "Void Brick Block",
 
   "block.better-dark-mod.void_altar": "Void Altar",
 
@@ -48,6 +51,7 @@
   "block.better-dark-mod.void_lamp": "Void Lamp",
 
   "itemgroup.better-dark-mod.void_items": "Void Items",
+  "itemgroup.better-dark-mod.void_test": "Void Test Blocks",
   "itemgroup.better-dark-mod.void_blocks": "Void Blocks",
 
   "tooltip.better-dark-mod.void_altar.tooltip": "Changes §8Void§r Objects",
@@ -55,7 +59,7 @@
   "tooltip.better-dark-mod.void_staff.shift_down": "Turns Blocks into §8Void Blocks§r ",
   "tooltip.better-dark-mod.void_staff": "Press §eShift§r for more Info",
 
-  "tooltip.better-dark-mod.true_void_block": "§9 $%$%/%%%&%&/%&//&/&/&/&/%&&/%&/&/&/&%%&&/§§%$/&(%%$ §r",
+  "tooltip.better-dark-mod.true_void_block": "§9 $%$% §r",
 
   "tooltip.better-dark-mod.void_berry": "A Berry Straight from the §8Void§r"
 

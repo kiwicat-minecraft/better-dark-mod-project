@@ -70,6 +70,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.VOID_DIAMOND_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.VOID_DIAMOND_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.VOID_DIAMOND_HOE, Models.HANDHELD);
-
+        itemModelGenerator.register(ModItems.VOID_DIAMOND_HAMMER, Models.HANDHELD);
     }
 }

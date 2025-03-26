@@ -101,6 +101,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.VOID_ORE), conditionsFromItem(ModItems.VOID_ORE))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.VOID_DIAMOND_HAMMER)
+                .pattern("DDD")
+                .pattern("DDD")
+                .pattern(" S ")
+                .input('S', Items.STICK)
+                .input('D', ModItems.VOID_ORE)
+                .criterion(hasItem(ModItems.VOID_ORE), conditionsFromItem(ModItems.VOID_ORE))
+                .offerTo(recipeExporter);
+
         offer2x2CompactingRecipe(recipeExporter, RecipeCategory.MISC, ModBlocks.VOID_BRICK_BLOCK, ModItems.VOID_BRICK);
 
 

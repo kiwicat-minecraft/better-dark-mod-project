@@ -3,10 +3,12 @@ package net.kiwi.darkmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.kiwi.darkmod.block.ModBlocks;
 import net.kiwi.darkmod.component.ModDataComponentTypes;
 import net.kiwi.darkmod.item.ModItemGroups;
 import net.kiwi.darkmod.item.ModItems;
+import net.kiwi.darkmod.util.HammerUsageEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,6 +24,8 @@ public class BetterDarkMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
 		ModDataComponentTypes.registerDataComponentTypes();
+
+		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 
 
 

@@ -2,6 +2,7 @@ package net.kiwi.darkmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kiwi.darkmod.BetterDarkMod;
+import net.kiwi.darkmod.item.custom.HammerItem;
 import net.kiwi.darkmod.item.custom.VoidStaffItem;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -46,6 +47,11 @@ public class ModItems {
     public static final Item VOID_DIAMOND_HOE = registerItem("void_diamond_hoe",
             new HoeItem(ModToolMaterials.VOID_DIAMOND, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.VOID_DIAMOND, 0.1f, -3f))));
+
+    public static final Item VOID_DIAMOND_HAMMER = registerItem("void_diamond_hammer",
+            new HammerItem(ModToolMaterials.VOID_DIAMOND, new Item.Settings()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.VOID_DIAMOND, 20, -3.4f))));
+
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(BetterDarkMod.MOD_ID, name),item);
