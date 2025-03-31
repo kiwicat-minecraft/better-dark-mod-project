@@ -22,7 +22,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.VOID_GOO_DEEPSLATE_BLOCK)
                 .add(ModBlocks.VOID_GOO_BLOCK)
                 .add(ModBlocks.VOID_DIAMOND_ORE_DEEPSLATE_BLOCK)
-                .add(ModBlocks.VOID_ALTAR);
+                .add(ModBlocks.VOID_ALTAR)
+
+                .add(ModBlocks.VOID_BRICK_DOOR)
+                .add(ModBlocks.VOID_BRICK_TRAPDOOR)
+                .add(ModBlocks.VOID_BRICK_WALL)
+                .add(ModBlocks.VOID_BRICK_FENCE)
+                .add(ModBlocks.VOID_BRICK_FENCE_GATE)
+                .add(ModBlocks.VOID_BRICK_PRESSURE_PLATE)
+                .add(ModBlocks.VOID_BRICK_BUTTON)
+                .add(ModBlocks.VOID_BRICK_BLOCK)
+                .add(ModBlocks.VOID_BRICK_STAIRS)
+                .add(ModBlocks.VOID_BRICK_SLAB);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.TRUE_VOID_BLOCK)
@@ -31,7 +42,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.VOID_GOO_BLOCK)
                 .add(ModBlocks.VOID_GOO_DEEPSLATE_BLOCK)
                 .add(ModBlocks.VOID_DIAMOND_ORE_BLOCK)
-                .add(ModBlocks.VOID_DIAMOND_ORE_DEEPSLATE_BLOCK);
+                .add(ModBlocks.VOID_DIAMOND_ORE_DEEPSLATE_BLOCK)
+
+                .add(ModBlocks.VOID_BRICK_DOOR)
+                .add(ModBlocks.VOID_BRICK_TRAPDOOR)
+                .add(ModBlocks.VOID_BRICK_WALL)
+                .add(ModBlocks.VOID_BRICK_FENCE)
+                .add(ModBlocks.VOID_BRICK_FENCE_GATE)
+                .add(ModBlocks.VOID_BRICK_PRESSURE_PLATE)
+                .add(ModBlocks.VOID_BRICK_BUTTON)
+                .add(ModBlocks.VOID_BRICK_BLOCK)
+                .add(ModBlocks.VOID_BRICK_STAIRS)
+                .add(ModBlocks.VOID_BRICK_SLAB);
+
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.VOID_BRICK_FENCE)

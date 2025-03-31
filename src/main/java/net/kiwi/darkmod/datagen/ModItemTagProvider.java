@@ -33,5 +33,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.VOID_DIAMOND_HOE);
         getOrCreateTagBuilder(ItemTags.PICKAXES)
                 .add(ModItems.VOID_DIAMOND_PICKAXE);
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.VOID_DIAMOND_HELMET)
+                .add(ModItems.VOID_DIAMOND_CHESTPLATE)
+                .add(ModItems.VOID_DIAMOND_LEGGINGS)
+                .add(ModItems.VOID_DIAMOND_BOOTS);
     }
 }

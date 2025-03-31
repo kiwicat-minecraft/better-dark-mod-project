@@ -6,6 +6,7 @@ import net.kiwi.darkmod.block.ModBlocks;
 import net.kiwi.darkmod.block.custom.VoidLampBlock;
 import net.kiwi.darkmod.item.ModItems;
 import net.minecraft.data.client.*;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -58,7 +59,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.VOID_ORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VOID_DIAMOND, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_GOO, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_BERRY, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_STAFF, Models.GENERATED);
@@ -71,5 +72,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.VOID_DIAMOND_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.VOID_DIAMOND_HOE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.VOID_DIAMOND_HAMMER, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.VOID_DIAMOND_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.VOID_DIAMOND_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.VOID_DIAMOND_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.VOID_DIAMOND_LEGGINGS));
     }
 }

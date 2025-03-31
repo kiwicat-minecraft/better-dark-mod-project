@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 import java.util.List;
 
 public class ModItems {
-    public static final Item VOID_ORE = registerItem("void_ore", new Item(new Item.Settings()));
+    public static final Item VOID_DIAMOND = registerItem("void_diamond", new Item(new Item.Settings()));
     public static final Item VOID_GOO = registerItem("void_goo", new Item(new Item.Settings()));
     public static final Item VOID_BRICK = registerItem("void_brick", new Item(new Item.Settings()));
     public static final Item VOID_CLAY = registerItem("void_clay", new Item(new Item.Settings()));
@@ -52,6 +52,28 @@ public class ModItems {
             new HammerItem(ModToolMaterials.VOID_DIAMOND, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.VOID_DIAMOND, 20, -3.4f))));
 
+    public static final Item VOID_DIAMOND_HELMET = registerItem("void_diamond_helmet",
+            new ArmorItem(ModArmorMaterials.VOID_DIAMOND_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(55))));
+
+    public static final Item VOID_DIAMOND_CHESTPLATE = registerItem("void_diamond_chestplate",
+            new ArmorItem(ModArmorMaterials.VOID_DIAMOND_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(55))));
+
+    public static final Item VOID_DIAMOND_LEGGINGS = registerItem("void_diamond_leggings",
+            new ArmorItem(ModArmorMaterials.VOID_DIAMOND_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(55))));
+
+    public static final Item VOID_DIAMOND_BOOTS = registerItem("void_diamond_boots",
+            new ArmorItem(ModArmorMaterials.VOID_DIAMOND_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(55))));
+
+
+
+
+
+
+
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(BetterDarkMod.MOD_ID, name),item);
@@ -61,7 +83,7 @@ public class ModItems {
         BetterDarkMod.LOGGER.info("Registering Mod Items for "+ BetterDarkMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(VOID_ORE);
+            fabricItemGroupEntries.add(VOID_DIAMOND);
             fabricItemGroupEntries.add(VOID_GOO);
             fabricItemGroupEntries.add(VOID_BRICK);
         });

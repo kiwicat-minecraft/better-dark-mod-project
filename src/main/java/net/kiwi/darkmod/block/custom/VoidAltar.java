@@ -35,7 +35,7 @@ public class VoidAltar extends Block {
     public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
         if (entity instanceof ItemEntity ItemEntity){
             if (isValidItem(ItemEntity.getStack())){
-                ItemEntity.setStack(new ItemStack(ModItems.VOID_ORE, ItemEntity.getStack().getCount()));
+                ItemEntity.setStack(new ItemStack(ModItems.VOID_DIAMOND, ItemEntity.getStack().getCount()));
         }
 
         }

@@ -13,11 +13,11 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
     public static final ItemGroup VOID_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(BetterDarkMod.MOD_ID, "void_items"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.VOID_ORE))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.VOID_DIAMOND))
                     .displayName(Text.translatable("itemgroup.better-dark-mod.void_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.VOID_GOO);
-                        entries.add(ModItems.VOID_ORE);
+                        entries.add(ModItems.VOID_DIAMOND);
                         entries.add(ModItems.VOID_BERRY);
                         entries.add(ModItems.VOID_BRICK);
                         entries.add(ModItems.VOID_CLAY);
@@ -30,6 +30,11 @@ public class ModItemGroups {
                         entries.add(ModItems.VOID_DIAMOND_HOE);
                         entries.add(ModItems.VOID_DIAMOND_PICKAXE);
                         entries.add(ModItems.VOID_DIAMOND_HAMMER);
+
+                        entries.add(ModItems.VOID_DIAMOND_CHESTPLATE);
+                        entries.add(ModItems.VOID_DIAMOND_BOOTS);
+                        entries.add(ModItems.VOID_DIAMOND_LEGGINGS);
+                        entries.add(ModItems.VOID_DIAMOND_HELMET);
                     }).build());
 
     public static final ItemGroup VOID_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

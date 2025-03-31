@@ -11,7 +11,7 @@ import java.util.Objects;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    VOID_DIAMOND(ModTags.Blocks.INCORRECT_FOR_VOID_TOOL, 4666, 15.0F, 4.0F, 33, () -> Ingredient.ofItems(ModItems.VOID_ORE));
+    VOID_DIAMOND(ModTags.Blocks.INCORRECT_FOR_VOID_TOOL, 4666, 15.0F, 4.0F, 33, () -> Ingredient.ofItems(ModItems.VOID_DIAMOND));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

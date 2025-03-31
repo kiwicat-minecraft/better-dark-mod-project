@@ -40,8 +40,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.VOID_BRICK_PRESSURE_PLATE);
         addDrop(ModBlocks.VOID_BRICK_TRAPDOOR);
 
-        addDrop(ModBlocks.VOID_DIAMOND_ORE_BLOCK, oreDrops(ModBlocks.VOID_DIAMOND_ORE_BLOCK, ModItems.VOID_ORE));
-        addDrop(ModBlocks.VOID_DIAMOND_ORE_DEEPSLATE_BLOCK, multipleOreDrops(ModBlocks.VOID_DIAMOND_ORE_DEEPSLATE_BLOCK, ModItems.VOID_ORE,2, 10));
+        addDrop(ModBlocks.VOID_DIAMOND_ORE_BLOCK, oreDrops(ModBlocks.VOID_DIAMOND_ORE_BLOCK, ModItems.VOID_DIAMOND));
+        addDrop(ModBlocks.VOID_DIAMOND_ORE_DEEPSLATE_BLOCK, multipleOreDrops(ModBlocks.VOID_DIAMOND_ORE_DEEPSLATE_BLOCK, ModItems.VOID_DIAMOND,2, 10));
         addDrop(ModBlocks.VOID_GOO_BLOCK, oreDrops(ModBlocks.VOID_GOO_BLOCK, ModItems.VOID_GOO));
         addDrop(ModBlocks.VOID_GOO_DEEPSLATE_BLOCK, multipleOreDrops(ModBlocks.VOID_GOO_DEEPSLATE_BLOCK, ModItems.VOID_GOO,2, 5));
     }
