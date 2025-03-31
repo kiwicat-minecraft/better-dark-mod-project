@@ -126,6 +126,36 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.VOID_BRICK), conditionsFromItem(ModItems.VOID_BRICK))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VOID_DIAMOND_CHESTPLATE)
+                .pattern("D D")
+                .pattern("DDD")
+                .pattern("DDD")
+                .input('D', ModItems.VOID_DIAMOND)
+                .criterion(hasItem(ModItems.VOID_DIAMOND), conditionsFromItem(ModItems.VOID_DIAMOND))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VOID_DIAMOND_BOOTS)
+                .pattern("D D")
+                .pattern("D D")
+                .input('D', ModItems.VOID_DIAMOND)
+                .criterion(hasItem(ModItems.VOID_DIAMOND), conditionsFromItem(ModItems.VOID_DIAMOND))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VOID_DIAMOND_LEGGINGS)
+                .pattern("DDD")
+                .pattern("D D")
+                .pattern("D D")
+                .input('D', ModItems.VOID_DIAMOND)
+                .criterion(hasItem(ModItems.VOID_DIAMOND), conditionsFromItem(ModItems.VOID_DIAMOND))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VOID_DIAMOND_HELMET)
+                .pattern("DDD")
+                .pattern("D D")
+                .input('D', ModItems.VOID_DIAMOND)
+                .criterion(hasItem(ModItems.VOID_DIAMOND), conditionsFromItem(ModItems.VOID_DIAMOND))
+                .offerTo(recipeExporter);
+
 
 
 
