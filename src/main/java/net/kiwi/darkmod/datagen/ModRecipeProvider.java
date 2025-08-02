@@ -2,6 +2,7 @@ package net.kiwi.darkmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.kiwi.darkmod.BetterDarkMod;
 import net.kiwi.darkmod.block.ModBlocks;
 import net.kiwi.darkmod.item.ModItems;
 import net.minecraft.data.server.recipe.RecipeExporter;
@@ -11,6 +12,7 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Identifier;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -163,6 +165,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('D', ModItems.VOID_DIAMOND)
                 .criterion(hasItem(ModItems.VOID_DIAMOND), conditionsFromItem(ModItems.VOID_DIAMOND))
                 .offerTo(recipeExporter);
+
+        offerSmithingTrimRecipe(recipeExporter, ModItems.VOID_DIAMOND_SMITHING_TEMPLATE, Identifier.of(BetterDarkMod.MOD_ID, "void"));
 
 
 
