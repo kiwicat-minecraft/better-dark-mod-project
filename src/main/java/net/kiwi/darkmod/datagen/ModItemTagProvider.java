@@ -39,5 +39,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.VOID_DIAMOND_CHESTPLATE)
                 .add(ModItems.VOID_DIAMOND_LEGGINGS)
                 .add(ModItems.VOID_DIAMOND_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.VOID_DIAMOND);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.VOID_DIAMOND_SMITHING_TEMPLATE);
     }
 }
