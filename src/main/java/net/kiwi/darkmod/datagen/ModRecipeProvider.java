@@ -156,6 +156,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.VOID_DIAMOND), conditionsFromItem(ModItems.VOID_DIAMOND))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.VOID_DIAMOND_HORSE_ARMOR)
+                .pattern("  D")
+                .pattern("DDD")
+                .pattern("D D")
+                .input('D', ModItems.VOID_DIAMOND)
+                .criterion(hasItem(ModItems.VOID_DIAMOND), conditionsFromItem(ModItems.VOID_DIAMOND))
+                .offerTo(recipeExporter);
+
 
 
 

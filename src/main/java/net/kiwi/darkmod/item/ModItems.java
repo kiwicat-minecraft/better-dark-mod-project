@@ -3,6 +3,7 @@ package net.kiwi.darkmod.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kiwi.darkmod.BetterDarkMod;
 import net.kiwi.darkmod.item.custom.HammerItem;
+import net.kiwi.darkmod.item.custom.ModArmorItem;
 import net.kiwi.darkmod.item.custom.VoidStaffItem;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -53,7 +54,7 @@ public class ModItems {
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.VOID_DIAMOND, 20, -3.4f))));
 
     public static final Item VOID_DIAMOND_HELMET = registerItem("void_diamond_helmet",
-            new ArmorItem(ModArmorMaterials.VOID_DIAMOND_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+            new ModArmorItem(ModArmorMaterials.VOID_DIAMOND_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                     .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(55))));
 
     public static final Item VOID_DIAMOND_CHESTPLATE = registerItem("void_diamond_chestplate",
@@ -67,6 +68,9 @@ public class ModItems {
     public static final Item VOID_DIAMOND_BOOTS = registerItem("void_diamond_boots",
             new ArmorItem(ModArmorMaterials.VOID_DIAMOND_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(55))));
+
+    public static final Item VOID_DIAMOND_HORSE_ARMOR = registerItem("void_diamond_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.VOID_DIAMOND_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1)));
 
 
 

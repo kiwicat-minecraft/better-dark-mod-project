@@ -21,8 +21,10 @@ public class BetterDarkMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItemGroups.registerItemGroups();
+
 		ModBlocks.registerModBlocks();
 		ModItems.registerModItems();
+
 		ModDataComponentTypes.registerDataComponentTypes();
 
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());

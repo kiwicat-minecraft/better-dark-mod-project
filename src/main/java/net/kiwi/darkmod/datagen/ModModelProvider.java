@@ -77,5 +77,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.VOID_DIAMOND_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.VOID_DIAMOND_BOOTS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.VOID_DIAMOND_LEGGINGS));
+
+        itemModelGenerator.register(ModItems.VOID_DIAMOND_HORSE_ARMOR, Models.GENERATED);
     }
 }
