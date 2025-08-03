@@ -62,7 +62,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.VOID_DIAMOND, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_GOO, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_BERRY, Models.GENERATED);
-        itemModelGenerator.register(ModItems.VOID_STAFF, Models.GENERATED);
+        // itemModelGenerator.register(ModItems.VOID_STAFF, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_BRICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_CLAY, Models.GENERATED);
 
