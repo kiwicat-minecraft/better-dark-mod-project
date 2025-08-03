@@ -1,8 +1,11 @@
 package net.kiwi.darkmod.sound;
 
 import net.kiwi.darkmod.BetterDarkMod;
+import net.minecraft.block.jukebox.JukeboxSong;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
@@ -20,6 +23,9 @@ public class ModSounds {
     public static final BlockSoundGroup ALTAR_SOUNDS = new BlockSoundGroup(1f, 1f,
             ALTAR_BREAK, ALTAR_STEP, ALTAR_PLACE, ALTAR_HIT, ALTAR_FALL);
 
+    public static final SoundEvent SANDBREAKER = registerSoundEvent("sandbreaker");
+    public static final RegistryKey<JukeboxSong> SANDBREAKER_KEY =
+            RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(BetterDarkMod.MOD_ID, "sandbreaker"));
 
 
 

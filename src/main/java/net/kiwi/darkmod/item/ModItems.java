@@ -5,6 +5,7 @@ import net.kiwi.darkmod.BetterDarkMod;
 import net.kiwi.darkmod.item.custom.HammerItem;
 import net.kiwi.darkmod.item.custom.ModArmorItem;
 import net.kiwi.darkmod.item.custom.VoidStaffItem;
+import net.kiwi.darkmod.sound.ModSounds;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
@@ -79,6 +80,9 @@ public class ModItems {
 
     public static final Item VOID_BOW = registerItem("void_bow",
             new BowItem(new Item.Settings().maxDamage(600)));
+
+    public static final Item SANDBREAKER_MUSIC_DISK = registerItem("sandbreaker_music_disk",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.SANDBREAKER_KEY).maxCount(1)));
 
 
 

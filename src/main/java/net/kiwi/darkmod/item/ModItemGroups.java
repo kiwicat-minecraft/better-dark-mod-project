@@ -23,6 +23,7 @@ public class ModItemGroups {
                         entries.add(ModItems.VOID_CLAY);
 
                         entries.add(ModItems.VOID_STAFF);
+                        entries.add(ModItems.SANDBREAKER_MUSIC_DISK);
 
                         entries.add(ModItems.VOID_DIAMOND_SWORD);
                         entries.add(ModItems.VOID_DIAMOND_SHOVEL);

@@ -34,5 +34,13 @@
     "sounds": [
       "better-dark-mod:altar_fall"
     ]
+  },
+  "sandbreaker": {
+    "sounds": [
+      {
+        "name": "better-dark-mod:sandbreaker",
+        "stream": true
+      }
+    ]
   }
 }
