@@ -17,6 +17,9 @@
   "item.better-dark-mod.void_bow": "Void Bow",
 
   "effect.better-dark-mod.teleporty": "Teleporty Effect",
+  "item.minecraft.potion.effect.teleporty_potion": "Teleporty Potion",
+  "item.minecraft.splash_potion.effect.teleporty_potion": "Splash Teleporty Potion",
+  "item.minecraft.lingering_potion.effect.teleporty_potion": "Lingering Teleporty Potion",
 
   "item.better-dark-mod.void_diamond_chestplate": "Void Diamond Chestplate",
   "item.better-dark-mod.void_diamond_boots": "Void Diamond Boots",
