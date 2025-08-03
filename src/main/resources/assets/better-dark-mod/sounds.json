@@ -1,0 +1,38 @@
+{
+  "staff_use": {
+    "subtitle": "sounds.better-dark-mod.staff_use",
+    "sounds": [
+      "better-dark-mod:staff_use"
+    ]
+  },
+  "altar_break": {
+    "subtitle": "sounds.better-dark-mod.altar_break",
+    "sounds": [
+      "better-dark-mod:altar_break"
+    ]
+  },
+  "altar_step": {
+    "subtitle": "sounds.better-dark-mod.altar_step",
+    "sounds": [
+      "better-dark-mod:altar_step"
+    ]
+  },
+  "altar_place": {
+    "subtitle": "sounds.better-dark-mod.altar_place",
+    "sounds": [
+      "better-dark-mod:altar_place"
+    ]
+  },
+  "altar_hit": {
+    "subtitle": "sounds.better-dark-mod.altar_hit",
+    "sounds": [
+      "better-dark-mod:altar_hit"
+    ]
+  },
+  "altar_fall": {
+    "subtitle": "sounds.better-dark-mod.altar_fall",
+    "sounds": [
+      "better-dark-mod:altar_fall"
+    ]
+  }
+}

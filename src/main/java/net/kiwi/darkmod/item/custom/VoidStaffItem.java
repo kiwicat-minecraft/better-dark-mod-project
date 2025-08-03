@@ -2,6 +2,7 @@ package net.kiwi.darkmod.item.custom;
 
 import net.kiwi.darkmod.block.ModBlocks;
 import net.kiwi.darkmod.component.ModDataComponentTypes;
+import net.kiwi.darkmod.sound.ModSounds;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.gui.screen.Screen;
@@ -50,7 +51,7 @@ public class VoidStaffItem extends Item {
                 context.getStack().damage(1, ((ServerWorld) world), ((ServerPlayerEntity) context.getPlayer()),
                         item -> context.getPlayer().sendEquipmentBreakStatus(item, EquipmentSlot.MAINHAND));
 
-                world.playSound(null, context.getBlockPos(), SoundEvents.ENTITY_WARDEN_HEARTBEAT, SoundCategory.BLOCKS);
+                world.playSound(null, context.getBlockPos(), ModSounds.STAFF_USE, SoundCategory.BLOCKS);
 
                 context.getStack().set(ModDataComponentTypes.COORDINATES, context.getBlockPos());
             }

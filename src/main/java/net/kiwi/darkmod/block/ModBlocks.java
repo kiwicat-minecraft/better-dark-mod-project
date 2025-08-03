@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kiwi.darkmod.BetterDarkMod;
 import net.kiwi.darkmod.block.custom.VoidAltar;
 import net.kiwi.darkmod.block.custom.VoidLampBlock;
+import net.kiwi.darkmod.sound.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -73,7 +74,7 @@ public class ModBlocks {
                     .strength(3f)));
 
     public static final Block VOID_ALTAR =registerBlock("void_altar",
-            new VoidAltar(AbstractBlock.Settings.create().requiresTool().strength(3f)));
+            new VoidAltar(AbstractBlock.Settings.create().requiresTool().strength(3f).sounds(ModSounds.ALTAR_SOUNDS)));
 
     public static final Block VOID_BRICK_STAIRS = registerBlock("void_brick_stairs",
             new StairsBlock(ModBlocks.VOID_BRICK_BLOCK.getDefaultState(),
