@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.kiwi.darkmod.block.ModBlocks;
 import net.kiwi.darkmod.component.ModDataComponentTypes;
+import net.kiwi.darkmod.effect.ModEffects;
 import net.kiwi.darkmod.item.ModItemGroups;
 import net.kiwi.darkmod.item.ModItems;
 import net.kiwi.darkmod.sound.ModSounds;
@@ -37,6 +38,8 @@ public class BetterDarkMod implements ModInitializer {
 		ModDataComponentTypes.registerDataComponentTypes();
 
 		ModSounds.registerSounds();
+
+		ModEffects.registerEffects();
 
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 
