@@ -30,6 +30,7 @@ public class ModItemGroups {
                         entries.add(ModItems.VOID_DIAMOND_HOE);
                         entries.add(ModItems.VOID_DIAMOND_PICKAXE);
                         entries.add(ModItems.VOID_DIAMOND_HAMMER);
+                        entries.add(ModItems.VOID_BOW);
 
                         entries.add(ModItems.VOID_DIAMOND_CHESTPLATE);
                         entries.add(ModItems.VOID_DIAMOND_BOOTS);

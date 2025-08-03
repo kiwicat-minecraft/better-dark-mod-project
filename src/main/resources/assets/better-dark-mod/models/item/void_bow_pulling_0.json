@@ -1,0 +1,6 @@
+{
+    "parent": "better-dark-mod:item/void_bow",
+    "textures": {
+        "layer0": "better-dark-mod:item/void_bow_pulling_0"
+    }
+}

@@ -77,6 +77,9 @@ public class ModItems {
     public static final Item VOID_DIAMOND_SMITHING_TEMPLATE = registerItem("void_diamond_armor_smithing_template",
             SmithingTemplateItem.of(Identifier.of(BetterDarkMod.MOD_ID, "void"), FeatureFlags.VANILLA));
 
+    public static final Item VOID_BOW = registerItem("void_bow",
+            new BowItem(new Item.Settings().maxDamage(600)));
+
 
 
 
