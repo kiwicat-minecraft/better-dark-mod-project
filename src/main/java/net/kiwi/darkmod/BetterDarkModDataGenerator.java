@@ -3,6 +3,7 @@ package net.kiwi.darkmod;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.kiwi.darkmod.datagen.*;
+import net.kiwi.darkmod.enchantment.ModEnchantments;
 import net.kiwi.darkmod.trim.ModTrimMaterials;
 import net.kiwi.darkmod.trim.ModTrimPatterns;
 import net.minecraft.registry.RegistryBuilder;
@@ -26,5 +27,6 @@ public class BetterDarkModDataGenerator implements DataGeneratorEntrypoint {
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
 	}
 }

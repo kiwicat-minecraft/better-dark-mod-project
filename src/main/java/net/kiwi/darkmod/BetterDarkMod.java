@@ -9,12 +9,15 @@ import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.kiwi.darkmod.block.ModBlocks;
 import net.kiwi.darkmod.component.ModDataComponentTypes;
 import net.kiwi.darkmod.effect.ModEffects;
+import net.kiwi.darkmod.enchantment.ModEnchantmentEffects;
+import net.kiwi.darkmod.enchantment.ModEnchantments;
 import net.kiwi.darkmod.item.ModItemGroups;
 import net.kiwi.darkmod.item.ModItems;
 import net.kiwi.darkmod.potion.ModPotions;
 import net.kiwi.darkmod.sound.ModSounds;
 import net.kiwi.darkmod.util.HammerUsageEvent;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.passive.SheepEntity;
@@ -46,6 +49,8 @@ public class BetterDarkMod implements ModInitializer {
 
 		ModPotions.registerPotions();
 
+		ModEnchantmentEffects.registerEnchantmentEffects();
+
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 
 		AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
@@ -58,6 +63,16 @@ public class BetterDarkMod implements ModInitializer {
 			}
             return ActionResult.PASS;
         });
+		AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
+			if (entity instanceof LivingEntity target && !world.isClient()) {
+				if (player.getMainHandStack().getName().getString().equals("Invisible")) {
+
+					target.addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 200, 0));
+				}
+			}
+			return ActionResult.PASS;
+		});
+
 
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
 			builder.registerPotionRecipe(Potions.AWKWARD, ModItems.VOID_BERRY, ModPotions.TELEPORTY_POTION);

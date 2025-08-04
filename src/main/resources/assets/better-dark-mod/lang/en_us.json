@@ -80,7 +80,12 @@
   "trim_material.better-dark-mod.void_diamond": "Void Diamond Material",
   "trim_pattern.better-dark-mod.void": "Void Armor Pattern",
 
-  "tooltip.better-dark-mod.void_berry": "A Berry Straight from the §8Void§r"
+  "tooltip.better-dark-mod.void_berry": "A Berry Straight from the §8Void§r",
+
+  "enchantment.better-dark-mod.catify": "Catify",
+
+  "painting.better-dark-mod.catgirl.title": "Catgirl",
+  "painting.better-dark-mod.catgirl.author": "faelions"
 
 
 
