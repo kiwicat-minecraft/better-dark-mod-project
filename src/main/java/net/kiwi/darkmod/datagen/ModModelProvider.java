@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.kiwi.darkmod.block.ModBlocks;
 import net.kiwi.darkmod.block.custom.VoidLampBlock;
+import net.kiwi.darkmod.block.custom.VoidcarrotCropBlock;
 import net.kiwi.darkmod.item.ModItems;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
@@ -39,6 +40,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.VOID_BRICK_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.VOID_BRICK_TRAPDOOR);
 
+        blockStateModelGenerator.registerCrop(ModBlocks.VOIDCARROT_CROP, VoidcarrotCropBlock.AGE,0,1,2,3,4,5,6);
+
         testpool.stairs(ModBlocks.TEST_STAIRS);
         testpool.button(ModBlocks.TEST_BUTTON);
         testpool.fence(ModBlocks.TEST_FENCE);
@@ -62,6 +65,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.VOID_DIAMOND, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_GOO, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_BERRY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VOID_CARROT, Models.GENERATED);
         // itemModelGenerator.register(ModItems.VOID_STAFF, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_BRICK, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_CLAY, Models.GENERATED);

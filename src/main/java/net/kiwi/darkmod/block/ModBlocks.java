@@ -5,8 +5,10 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kiwi.darkmod.BetterDarkMod;
 import net.kiwi.darkmod.block.custom.VoidAltar;
 import net.kiwi.darkmod.block.custom.VoidLampBlock;
+import net.kiwi.darkmod.block.custom.VoidcarrotCropBlock;
 import net.kiwi.darkmod.sound.ModSounds;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -115,6 +117,10 @@ public class ModBlocks {
                     .requiresTool()
                     .luminance(state -> state.get(VoidLampBlock.CLICKED) ? 15 : 0)));
 
+    public static final Block VOIDCARROT_CROP = registerBlockWithoutBlockItem("voidcarrot_crop",
+            new VoidcarrotCropBlock(AbstractBlock.Settings.create().noCollision()
+                    .ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.BLACK)));
+
     public static final Block TEST_BLOCK = registerBlock("test_block",
             new Block(AbstractBlock.Settings.create()
                     .strength(1f)
@@ -158,7 +164,9 @@ public class ModBlocks {
 
 
 
-
+    private static Block registerBlockWithoutBlockItem(String name, Block block){
+        return Registry.register(Registries.BLOCK, Identifier.of(BetterDarkMod.MOD_ID, name), block);
+    }
 
 
 

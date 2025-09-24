@@ -2,6 +2,7 @@ package net.kiwi.darkmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kiwi.darkmod.BetterDarkMod;
+import net.kiwi.darkmod.block.ModBlocks;
 import net.kiwi.darkmod.item.custom.HammerItem;
 import net.kiwi.darkmod.item.custom.ModArmorItem;
 import net.kiwi.darkmod.item.custom.VoidStaffItem;
@@ -83,6 +84,15 @@ public class ModItems {
 
     public static final Item SANDBREAKER_MUSIC_DISK = registerItem("sandbreaker_music_disk",
             new Item(new Item.Settings().jukeboxPlayable(ModSounds.SANDBREAKER_KEY).maxCount(1)));
+    public static final Item VOIDCARROT_SEEDS = registerItem("voidcarrot_seeds",
+            new AliasedBlockItem(ModBlocks.VOIDCARROT_CROP, new Item.Settings()));
+    public static final Item VOID_CARROT = registerItem("void_carrot", new Item(new Item.Settings().food(ModFoodComponents.VOID_CARROT)){
+        @Override
+        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+            tooltip.add(Text.translatable("tooltip.better-dark-mod.void_carrot"));
+            super.appendTooltip(stack, context, tooltip, type);
+        }
+    });
 
 
 

@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.kiwi.darkmod.block.ModBlocks;
 import net.kiwi.darkmod.component.ModDataComponentTypes;
@@ -78,7 +79,8 @@ public class BetterDarkMod implements ModInitializer {
 			builder.registerPotionRecipe(Potions.AWKWARD, ModItems.VOID_BERRY, ModPotions.TELEPORTY_POTION);
 		});
 
-
+		CompostingChanceRegistry.INSTANCE.add(ModItems.VOID_CARROT, 0.6f);
+	CompostingChanceRegistry.INSTANCE.add(ModItems.VOIDCARROT_SEEDS, 0.3f);
 
 
 	}

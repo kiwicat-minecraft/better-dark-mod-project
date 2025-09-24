@@ -11,6 +11,7 @@ public class DarkModClient implements ClientModInitializer {
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.VOID_BRICK_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.VOID_BRICK_TRAPDOOR, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.VOIDCARROT_CROP, RenderLayer.getCutout());
 
         ModModelPredicats.registerModelPredicates();
     }

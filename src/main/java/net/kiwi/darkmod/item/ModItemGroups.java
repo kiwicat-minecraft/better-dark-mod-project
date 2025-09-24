@@ -39,6 +39,8 @@ public class ModItemGroups {
                         entries.add(ModItems.VOID_DIAMOND_HELMET);
                         entries.add(ModItems.VOID_DIAMOND_HORSE_ARMOR);
                         entries.add(ModItems.VOID_DIAMOND_SMITHING_TEMPLATE);
+
+                        entries.add(ModItems.VOIDCARROT_SEEDS);
                     }).build());
 
     public static final ItemGroup VOID_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

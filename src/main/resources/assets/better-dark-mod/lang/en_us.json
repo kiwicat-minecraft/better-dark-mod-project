@@ -5,6 +5,8 @@
   "item.better-dark-mod.void_berry": "Void Berry",
   "item.better-dark-mod.void_brick": "Void Brick",
   "item.better-dark-mod.void_clay": "Void Clay",
+  "item.better-dark-mod.voidcarrot_seeds": "Void Carrot Seeds",
+  "item.better-dark-mod.void_carrot": "Void Carrot",
   "item.better-dark-mod.sandbreaker_music_disk": "Sandbreaker Music Disk",
   "item.better-dark-mod.sandbreaker_music_disk.desc": "Denys_Brodovskyi - Sanbreaker",
 
@@ -44,6 +46,8 @@
 
   "block.better-dark-mod.test_block": "Test Block",
 
+  "block.better-dark-mod.voidcarrot_crop": "Void Carrot Crop",
+
   "block.better-dark-mod.test_stairs": "Test Stairs",
   "block.better-dark-mod.test_button": "Test Button",
   "block.better-dark-mod.test_door": "Test Door",
@@ -81,6 +85,7 @@
   "trim_pattern.better-dark-mod.void": "Void Armor Pattern",
 
   "tooltip.better-dark-mod.void_berry": "A Berry Straight from the §8Void§r",
+  "tooltip.better-dark-mod.void_carrot": "A Carrot Straight from the §8Void§r",
 
   "enchantment.better-dark-mod.catify": "Catify",
 

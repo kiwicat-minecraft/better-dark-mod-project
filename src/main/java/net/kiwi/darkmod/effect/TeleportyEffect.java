@@ -18,8 +18,9 @@ public class TeleportyEffect extends StatusEffect {
             double range = 0.5 + amplifier * 0.2;
             double dx = (world.getRandom().nextDouble() - 0.5) * 2 * range;
             double dz = (world.getRandom().nextDouble() - 0.5) * 2 * range;
+            double dy = (world.getRandom().nextDouble() - 0.5) * 2 * range;
 
-            Vec3d newPos = entity.getPos().add(dx, 0, dz);
+            Vec3d newPos = entity.getPos().add(dx, dy, dz);
             entity.requestTeleport(newPos.x, newPos.y, newPos.z);
         }
         return super.applyUpdateEffect(entity, amplifier);
