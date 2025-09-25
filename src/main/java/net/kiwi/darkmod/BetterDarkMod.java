@@ -11,20 +11,17 @@ import net.kiwi.darkmod.block.ModBlocks;
 import net.kiwi.darkmod.component.ModDataComponentTypes;
 import net.kiwi.darkmod.effect.ModEffects;
 import net.kiwi.darkmod.enchantment.ModEnchantmentEffects;
-import net.kiwi.darkmod.enchantment.ModEnchantments;
 import net.kiwi.darkmod.item.ModItemGroups;
 import net.kiwi.darkmod.item.ModItems;
 import net.kiwi.darkmod.potion.ModPotions;
 import net.kiwi.darkmod.sound.ModSounds;
 import net.kiwi.darkmod.util.HammerUsageEvent;
-import net.minecraft.entity.Entity;
+import net.kiwi.darkmod.world.gen.ModWorldGeneration;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.potion.Potions;
-import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -51,6 +48,8 @@ public class BetterDarkMod implements ModInitializer {
 		ModPotions.registerPotions();
 
 		ModEnchantmentEffects.registerEnchantmentEffects();
+
+		ModWorldGeneration.generateModWorldGen();
 
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 

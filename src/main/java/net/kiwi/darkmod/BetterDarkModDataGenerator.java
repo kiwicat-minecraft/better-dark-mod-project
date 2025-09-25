@@ -6,6 +6,8 @@ import net.kiwi.darkmod.datagen.*;
 import net.kiwi.darkmod.enchantment.ModEnchantments;
 import net.kiwi.darkmod.trim.ModTrimMaterials;
 import net.kiwi.darkmod.trim.ModTrimPatterns;
+import net.kiwi.darkmod.world.ModConfiguredFeatures;
+import net.kiwi.darkmod.world.ModPlacedFeatures;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 
@@ -28,5 +30,8 @@ public class BetterDarkModDataGenerator implements DataGeneratorEntrypoint {
 		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
+
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 }

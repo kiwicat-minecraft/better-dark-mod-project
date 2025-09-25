@@ -42,6 +42,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('D', ModItems.VOID_DIAMOND)
                 .criterion(hasItem(ModItems.VOID_DIAMOND), conditionsFromItem(ModItems.VOID_DIAMOND))
                 .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.VOIDCARROT_SEEDS)
+                .pattern("GGG")
+                .pattern("GDG")
+                .pattern("GGG")
+                .input('G', ModItems.VOID_GOO)
+                .input('D', Items.CARROT)
+                .criterion(hasItem(ModItems.VOID_GOO), conditionsFromItem(ModItems.VOIDCARROT_SEEDS))
+                .offerTo(recipeExporter);
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.VOID_STAFF, 1)
                 .input(ModItems.VOID_GOO)
                 .criterion(hasItem(ModItems.VOID_GOO), conditionsFromItem(ModItems.VOID_GOO))
