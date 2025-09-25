@@ -2,6 +2,8 @@ package net.kiwi.darkmod.world;
 
 import net.kiwi.darkmod.BetterDarkMod;
 import net.kiwi.darkmod.block.ModBlocks;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -9,16 +11,16 @@ import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 
 import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?,?>> VOID_DIAMOND_ORE_KEY = registerKey("void_diamond_ore");
     public static final RegistryKey<ConfiguredFeature<?,?>> VOID_GOO_ORE_KEY = registerKey("void_goo_ore");
+
+    public static final RegistryKey<ConfiguredFeature<?,?>> VOID_BERRY_BUSHES_KEY = registerKey("void_berry_bushes");
 
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
@@ -34,6 +36,12 @@ public class ModConfiguredFeatures {
 
         register(context, VOID_DIAMOND_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldVoidDiamondOres, 7));
         register(context, VOID_GOO_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldVoidGooOres, 14));
+
+        register(context, VOID_BERRY_BUSHES_KEY, Feature.RANDOM_PATCH,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK,
+                        new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.VOID_BERRY_BUSH
+                                .getDefaultState().with(SweetBerryBushBlock.AGE, 3))),
+                        List.of(Blocks.GRASS_BLOCK)));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
