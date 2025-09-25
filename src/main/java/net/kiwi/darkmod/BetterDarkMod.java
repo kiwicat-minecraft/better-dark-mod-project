@@ -80,7 +80,8 @@ public class BetterDarkMod implements ModInitializer {
 		});
 
 		CompostingChanceRegistry.INSTANCE.add(ModItems.VOID_CARROT, 0.6f);
-	CompostingChanceRegistry.INSTANCE.add(ModItems.VOIDCARROT_SEEDS, 0.3f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.VOIDCARROT_SEEDS, 0.3f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.VOID_BERRY, 0.4f);
 
 
 	}

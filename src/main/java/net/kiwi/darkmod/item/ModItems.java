@@ -23,7 +23,7 @@ public class ModItems {
     public static final Item VOID_GOO = registerItem("void_goo", new Item(new Item.Settings()));
     public static final Item VOID_BRICK = registerItem("void_brick", new Item(new Item.Settings()));
     public static final Item VOID_CLAY = registerItem("void_clay", new Item(new Item.Settings()));
-    public static final Item VOID_BERRY = registerItem("void_berry", new Item(new Item.Settings().food(ModFoodComponents.VOID_BERRY)){
+    public static final Item VOID_BERRY = registerItem("void_berry", new AliasedBlockItem(ModBlocks.VOID_BERRY_BUSH,new Item.Settings().food(ModFoodComponents.VOID_BERRY)){
         @Override
         public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
             tooltip.add(Text.translatable("tooltip.better-dark-mod.void_berry"));
@@ -84,8 +84,10 @@ public class ModItems {
 
     public static final Item SANDBREAKER_MUSIC_DISK = registerItem("sandbreaker_music_disk",
             new Item(new Item.Settings().jukeboxPlayable(ModSounds.SANDBREAKER_KEY).maxCount(1)));
+
     public static final Item VOIDCARROT_SEEDS = registerItem("voidcarrot_seeds",
             new AliasedBlockItem(ModBlocks.VOIDCARROT_CROP, new Item.Settings()));
+
     public static final Item VOID_CARROT = registerItem("void_carrot", new Item(new Item.Settings().food(ModFoodComponents.VOID_CARROT)){
         @Override
         public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {

@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kiwi.darkmod.BetterDarkMod;
 import net.kiwi.darkmod.block.custom.VoidAltar;
+import net.kiwi.darkmod.block.custom.VoidBerryBushBlock;
 import net.kiwi.darkmod.block.custom.VoidLampBlock;
 import net.kiwi.darkmod.block.custom.VoidcarrotCropBlock;
 import net.kiwi.darkmod.sound.ModSounds;
@@ -158,6 +159,9 @@ public class ModBlocks {
     public static final Block TEST_TRAPDOOR = registerBlock("test_trapdoor",
             new TrapdoorBlock(BlockSetType.IRON,
                     AbstractBlock.Settings.create().strength(2f).requiresTool().nonOpaque()));
+
+    public static final Block VOID_BERRY_BUSH = registerBlockWithoutBlockItem("void_berry_bush",
+            new VoidBerryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
 
 
 

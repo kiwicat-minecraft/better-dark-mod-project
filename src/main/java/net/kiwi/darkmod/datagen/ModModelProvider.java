@@ -3,6 +3,7 @@ package net.kiwi.darkmod.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.kiwi.darkmod.block.ModBlocks;
+import net.kiwi.darkmod.block.custom.VoidBerryBushBlock;
 import net.kiwi.darkmod.block.custom.VoidLampBlock;
 import net.kiwi.darkmod.block.custom.VoidcarrotCropBlock;
 import net.kiwi.darkmod.item.ModItems;
@@ -41,6 +42,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(ModBlocks.VOID_BRICK_TRAPDOOR);
 
         blockStateModelGenerator.registerCrop(ModBlocks.VOIDCARROT_CROP, VoidcarrotCropBlock.AGE,0,1,2,3,4,5,6);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.VOID_BERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED,
+                VoidBerryBushBlock.AGE, 0,1,2,3);
 
         testpool.stairs(ModBlocks.TEST_STAIRS);
         testpool.button(ModBlocks.TEST_BUTTON);
@@ -64,7 +67,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.VOID_DIAMOND, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_GOO, Models.GENERATED);
-        itemModelGenerator.register(ModItems.VOID_BERRY, Models.GENERATED);
+        //itemModelGenerator.register(ModItems.VOID_BERRY, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_CARROT, Models.GENERATED);
         // itemModelGenerator.register(ModItems.VOID_STAFF, Models.GENERATED);
         itemModelGenerator.register(ModItems.VOID_BRICK, Models.GENERATED);
