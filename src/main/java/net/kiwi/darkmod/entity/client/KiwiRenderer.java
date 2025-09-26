@@ -11,7 +11,7 @@ import net.minecraft.util.Identifier;
 
 public class KiwiRenderer extends MobEntityRenderer<KiwiEntity, KiwiModel<KiwiEntity>> {
     public KiwiRenderer(EntityRendererFactory.Context context) {
-        super(context, new KiwiModel<>(context.getPart(KiwiModel.KIWI)), 1f);
+        super(context, new KiwiModel<>(context.getPart(KiwiModel.KIWI)), 0.5f);
     }
 
     @Override
