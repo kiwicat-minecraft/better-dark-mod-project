@@ -11,6 +11,8 @@ import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
+import java.util.Optional;
+
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
@@ -89,5 +91,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.VOID_DIAMOND_SMITHING_TEMPLATE, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.VOID_DIAMOND_HORSE_ARMOR, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.KIWI_SPAWN_EGG,
+                new Model(Optional.of(Identifier.of("item/template_spawn_egg")), Optional.empty()));
     }
 }

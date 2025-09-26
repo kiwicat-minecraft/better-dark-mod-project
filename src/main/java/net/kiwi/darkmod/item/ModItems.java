@@ -3,6 +3,7 @@ package net.kiwi.darkmod.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kiwi.darkmod.BetterDarkMod;
 import net.kiwi.darkmod.block.ModBlocks;
+import net.kiwi.darkmod.entity.ModEntities;
 import net.kiwi.darkmod.item.custom.HammerItem;
 import net.kiwi.darkmod.item.custom.ModArmorItem;
 import net.kiwi.darkmod.item.custom.VoidStaffItem;
@@ -95,6 +96,9 @@ public class ModItems {
             super.appendTooltip(stack, context, tooltip, type);
         }
     });
+
+    public static final Item KIWI_SPAWN_EGG = registerItem("kiwi_spawn_egg",
+            new SpawnEggItem(ModEntities.KIWI, 0xcc5cc0, 0x9c2690, new Item.Settings()));
 
 
 

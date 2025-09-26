@@ -5,12 +5,15 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.kiwi.darkmod.block.ModBlocks;
 import net.kiwi.darkmod.component.ModDataComponentTypes;
 import net.kiwi.darkmod.effect.ModEffects;
 import net.kiwi.darkmod.enchantment.ModEnchantmentEffects;
+import net.kiwi.darkmod.entity.ModEntities;
+import net.kiwi.darkmod.entity.custom.KiwiEntity;
 import net.kiwi.darkmod.item.ModItemGroups;
 import net.kiwi.darkmod.item.ModItems;
 import net.kiwi.darkmod.potion.ModPotions;
@@ -49,6 +52,8 @@ public class BetterDarkMod implements ModInitializer {
 
 		ModEnchantmentEffects.registerEnchantmentEffects();
 
+		ModEntities.registerModEntities();
+
 		ModWorldGeneration.generateModWorldGen();
 
 		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
@@ -82,6 +87,6 @@ public class BetterDarkMod implements ModInitializer {
 		CompostingChanceRegistry.INSTANCE.add(ModItems.VOIDCARROT_SEEDS, 0.3f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.VOID_BERRY, 0.4f);
 
-
+		FabricDefaultAttributeRegistry.register(ModEntities.KIWI, KiwiEntity.createAttributes());
 	}
 }

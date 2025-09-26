@@ -7,6 +7,7 @@
   "item.better-dark-mod.void_clay": "Void Clay",
   "item.better-dark-mod.voidcarrot_seeds": "Void Carrot Seeds",
   "item.better-dark-mod.void_carrot": "Void Carrot",
+  "item.better-dark-mod.kiwi_spawn_egg": "Kiwi Spawn Egg",
   "item.better-dark-mod.sandbreaker_music_disk": "Sandbreaker Music Disk",
   "item.better-dark-mod.sandbreaker_music_disk.desc": "Denys_Brodovskyi - Sanbreaker",
 
@@ -91,7 +92,9 @@
   "enchantment.better-dark-mod.catify": "Catify",
 
   "painting.better-dark-mod.catgirl.title": "Catgirl",
-  "painting.better-dark-mod.catgirl.author": "faelions"
+  "painting.better-dark-mod.catgirl.author": "faelions",
+
+  "entity.better-dark-mod.kiwi": "Kiwi"
 
 
 

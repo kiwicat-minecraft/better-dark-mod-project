@@ -41,6 +41,7 @@ public class ModItemGroups {
                         entries.add(ModItems.VOID_DIAMOND_SMITHING_TEMPLATE);
 
                         entries.add(ModItems.VOIDCARROT_SEEDS);
+                        entries.add(ModItems.KIWI_SPAWN_EGG);
                     }).build());
 
     public static final ItemGroup VOID_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
