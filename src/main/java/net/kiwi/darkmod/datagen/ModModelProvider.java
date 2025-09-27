@@ -63,6 +63,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.VOID_LAMP)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(VoidLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
 
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.STATUE);
+
     }
 
     @Override

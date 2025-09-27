@@ -173,6 +173,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('D', ModItems.VOID_DIAMOND)
                 .criterion(hasItem(ModItems.VOID_DIAMOND), conditionsFromItem(ModItems.VOID_DIAMOND))
                 .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModItems.KIWI_SPAWN_EGG)
+                .pattern("DDD")
+                .pattern("DND")
+                .pattern("DDD")
+                .input('D', ModItems.VOID_DIAMOND)
+                .input('N', Items.NETHER_STAR)
+                .criterion(hasItem(ModItems.VOID_DIAMOND), conditionsFromItem(ModItems.VOID_DIAMOND))
+                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.STATUE)
+                .pattern("DDD")
+                .pattern("DND")
+                .pattern("DDD")
+                .input('D', ModItems.VOID_GOO)
+                .input('N', Items.NETHER_STAR)
+                .criterion(hasItem(ModItems.VOID_GOO), conditionsFromItem(ModItems.VOID_GOO))
+                .offerTo(recipeExporter);
+
 
         offerSmithingTrimRecipe(recipeExporter, ModItems.VOID_DIAMOND_SMITHING_TEMPLATE, Identifier.of(BetterDarkMod.MOD_ID, "void"));
 

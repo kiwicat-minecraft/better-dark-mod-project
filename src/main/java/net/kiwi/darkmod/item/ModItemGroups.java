@@ -71,6 +71,7 @@ public class ModItemGroups {
 
 
                         entries.add(ModBlocks.VOID_LAMP);
+                        entries.add(ModBlocks.STATUE);
 
                     }).build());
 

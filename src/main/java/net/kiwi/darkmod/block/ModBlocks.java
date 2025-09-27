@@ -3,10 +3,7 @@ package net.kiwi.darkmod.block;
 import net.fabricmc.fabric.api.item.v1.FabricItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kiwi.darkmod.BetterDarkMod;
-import net.kiwi.darkmod.block.custom.VoidAltar;
-import net.kiwi.darkmod.block.custom.VoidBerryBushBlock;
-import net.kiwi.darkmod.block.custom.VoidLampBlock;
-import net.kiwi.darkmod.block.custom.VoidcarrotCropBlock;
+import net.kiwi.darkmod.block.custom.*;
 import net.kiwi.darkmod.sound.ModSounds;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
@@ -162,6 +159,9 @@ public class ModBlocks {
 
     public static final Block VOID_BERRY_BUSH = registerBlockWithoutBlockItem("void_berry_bush",
             new VoidBerryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH)));
+
+    public static final Block STATUE = registerBlock("statue",
+            new StatueBlock(AbstractBlock.Settings.create().nonOpaque()));
 
 
 
